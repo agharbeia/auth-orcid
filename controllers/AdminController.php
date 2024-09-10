@@ -1,10 +1,10 @@
 <?php
 
-namespace gm\humhub\modules\auth\mastodon\controllers;
+namespace gm\humhub\modules\auth\orcid\controllers;
 
 use Yii;
 use humhub\modules\admin\components\Controller;
-use gm\humhub\modules\auth\mastodon\models\ConfigureForm;
+use gm\humhub\modules\auth\orcid\models\ConfigureForm;
 
 /**
  * Module configuation
