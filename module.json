@@ -1,11 +1,11 @@
 {
-    "id": "auth-mastodon",
-    "name": "Mastodon Sign-In",
-    "description": "Integrating Mastodon Sign-In (OAuth 2.0).",
+    "id": "auth-orcid",
+    "name": "ORCID Sign-In",
+    "description": "Integrating ORCID Sign-In (OAuth 2.0).",
     "keywords": [
     ],
     "version": "1.0.0-beta.3",
-    "homepage": "https://github.com/greenmeteor/auth-mastodon",
+    "homepage": "https://github.com/greenmeteor/auth-orcid",
     "humhub": {
         "minVersion": "1.6"
     }
