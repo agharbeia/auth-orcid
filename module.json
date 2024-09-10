@@ -4,9 +4,9 @@
     "description": "Integrating ORCID Sign-In (OAuth 2.0).",
     "keywords": [
     ],
-    "version": "1.0.0-beta.3",
-    "homepage": "https://github.com/greenmeteor/auth-orcid",
+    "version": "1.0.0-beta.1",
+    "homepage": "https://github.com/agharbeia/auth-orcid",
     "humhub": {
-        "minVersion": "1.6"
+        "minVersion": "1.0"
     }
 }
