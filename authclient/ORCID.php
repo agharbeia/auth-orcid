@@ -1,11 +1,11 @@
 <?php
 
-namespace gm\humhub\modules\auth\orcid\authclient;
+namespace humhubContrib\auth\orcid\authclient;
 
 use Yii;
 use yii\authclient\OAuth2;
-use gm\humhub\modules\auth\orcid\Module;
-use gm\humhub\modules\auth\orcid\models\ConfigureForm;
+use humhubContrib\auth\orcid\Module;
+use humhubContrib\auth\orcid\models\ConfigureForm;
 
 /**
  * ORCID Authclient

@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this \humhub\modules\ui\view\components\View */
-/* @var $model \gm\humhub\modules\\auth\orcid\models\ConfigureForm */
+/* @var $model \humhubContrib\auth\orcid\models\ConfigureForm */
 
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;

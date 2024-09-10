@@ -1,10 +1,11 @@
 <?php
 
-namespace gm\humhub\modules\auth\orcid\controllers;
+namespace humhubContrib\auth\orcid\controllers;
 
 use Yii;
 use humhub\modules\admin\components\Controller;
-use gm\humhub\modules\auth\orcid\models\ConfigureForm;
+use humhubContrib\auth\orcid\models\ConfigureForm;
+
 
 /**
  * Module configuation

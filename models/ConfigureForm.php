@@ -1,11 +1,11 @@
 <?php
 
-namespace gm\humhub\modules\auth\orcid\models;
+namespace humhubContrib\auth\orcid\models;
 
 use Yii;
 use yii\base\Model;
 use yii\helpers\Url;
-use gm\humhub\modules\auth\orcid\Module;
+use humhubContrib\auth\orcid\Module;
 
 /**
  * The module configuration model

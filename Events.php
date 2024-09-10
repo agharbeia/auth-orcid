@@ -1,11 +1,11 @@
 <?php
 
-namespace gm\humhub\modules\auth\orcid;
+namespace humhubContrib\auth\orcid;
 
 use humhub\components\Event;
 use humhub\modules\user\authclient\Collection;
-use gm\humhub\modules\auth\orcid\authclient\ORCID;
-use gm\humhub\modules\auth\orcid\models\ConfigureForm;
+use humhubContrib\auth\orcid\authclient\ORCID;
+use humhubContrib\auth\orcid\models\ConfigureForm;
 
 class Events
 {

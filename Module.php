@@ -1,6 +1,6 @@
 <?php
 
-namespace gm\humhub\modules\auth\orcid;
+namespace humhubContrib\auth\orcid;
 
 use yii\helpers\Url;
 
