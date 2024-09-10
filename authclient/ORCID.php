@@ -1,16 +1,16 @@
 <?php
 
-namespace gm\humhub\modules\auth\mastodon\authclient;
+namespace gm\humhub\modules\auth\orcid\authclient;
 
 use Yii;
 use yii\authclient\OAuth2;
-use gm\humhub\modules\auth\mastodon\Module;
-use gm\humhub\modules\auth\mastodon\models\ConfigureForm;
+use gm\humhub\modules\auth\orcid\Module;
+use gm\humhub\modules\auth\orcid\models\ConfigureForm;
 
 /**
- * Mastodon Authclient
+ * ORCID Authclient
  */
-class Mastodon extends Oauth2
+class ORCID extends Oauth2
 {
 
     /**
@@ -21,7 +21,7 @@ class Mastodon extends Oauth2
         return [
             'popupWidth' => 860,
             'popupHeight' => 480,
-            'cssIcon' => 'fab fa-mastodon',
+            'cssIcon' => 'fab fa-orcid',
             'buttonBackgroundColor' => '#395697',
         ];
     }
@@ -94,13 +94,13 @@ class Mastodon extends Oauth2
      * @inheritdoc
      */
     protected function defaultName() {
-        return 'mastodon';
+        return 'orcid';
     }
 
     /**
      * @inheritdoc
      */
     protected function defaultTitle() {
-        return 'Mastodon';
+        return 'ORCID';
     }
 }
