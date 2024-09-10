@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this \humhub\modules\ui\view\components\View */
-/* @var $model \gm\humhub\modules\\auth\mastodon\models\ConfigureForm */
+/* @var $model \gm\humhub\modules\\auth\orcid\models\ConfigureForm */
 
 use yii\bootstrap\ActiveForm;
 use yii\helpers\Html;
@@ -10,12 +10,12 @@ use yii\helpers\Html;
 <div class="container-fluid">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <?= Yii::t('AuthMastodonModule.base', '<strong>Mastodon</strong> Sign-In configuration') ?></div>
+            <?= Yii::t('AuthORCIDModule.base', '<strong>ORCID</strong> Sign-In configuration') ?></div>
 
         <div class="panel-body">
             <p>
-                <?= Html::a(Yii::t('AuthMastodonModule.base', 'Mastodon Documentation'), 'https://docs.joinmastodon.org/spec/oauth/', ['class' => 'btn btn-primary pull-right btn-sm', 'target' => '_blank']); ?>
-                <?= Yii::t('AuthMastodonModule.base', 'Please follow the Mastodon instructions to create the required <strong>OAuth client</strong> credentials.'); ?>
+                <?= Html::a(Yii::t('AuthORCIDModule.base', 'ORCID Documentation'), 'https://info.orcid.org/documentation/integration-guide/sign-in-using-orcid-credentials/', ['class' => 'btn btn-primary pull-right btn-sm', 'target' => '_blank']); ?>
+                <?= Yii::t('AuthORCIDModule.base', 'Please follow the ORCID instructions to create the required <strong>OAuth client</strong> credentials.'); ?>
                 <br/>
             </p>
             <br/>
