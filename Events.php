@@ -1,11 +1,11 @@
 <?php
 
-namespace gm\humhub\modules\auth\mastodon;
+namespace gm\humhub\modules\auth\orcid;
 
 use humhub\components\Event;
 use humhub\modules\user\authclient\Collection;
-use gm\humhub\modules\auth\mastodon\authclient\Mastodon;
-use gm\humhub\modules\auth\mastodon\models\ConfigureForm;
+use gm\humhub\modules\auth\orcid\authclient\ORCID;
+use gm\humhub\modules\auth\orcid\models\ConfigureForm;
 
 class Events
 {
@@ -18,8 +18,8 @@ class Events
         $authClientCollection = $event->sender;
 
         if (!empty(ConfigureForm::getInstance()->enabled)) {
-            $authClientCollection->setClient('mastodon', [
-                'class' => Mastodon::class,
+            $authClientCollection->setClient('orcid', [
+                'class' => ORCID::class,
                 'clientId' => ConfigureForm::getInstance()->clientId,
                 'clientSecret' => ConfigureForm::getInstance()->clientSecret,
                 'apiBaseUrl' => ConfigureForm::getInstance()->serverUrl,
