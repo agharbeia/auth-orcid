@@ -1,11 +1,11 @@
 <?php
 
-namespace gm\humhub\modules\auth\mastodon\models;
+namespace gm\humhub\modules\auth\orcid\models;
 
 use Yii;
 use yii\base\Model;
 use yii\helpers\Url;
-use gm\humhub\modules\auth\mastodon\Module;
+use gm\humhub\modules\auth\orcid\Module;
 
 /**
  * The module configuration model
@@ -18,12 +18,12 @@ class ConfigureForm extends Model
     public $enabled;
 
     /**
-     * @var string the client id provided by Mastodon site
+     * @var string the client id provided by ORCID site
      */
     public $clientId;
 
     /**
-     * @var string the client secret provided by Mastodon site
+     * @var string the client secret provided by ORCID site
      */
     public $clientSecret;
 
@@ -55,10 +55,10 @@ class ConfigureForm extends Model
     public function attributeLabels()
     {
         return [
-            'enabled' => Yii::t('AuthMastodonModule.base', 'Enabled'),
-            'clientId' => Yii::t('AuthMastodonModule.base', 'Client ID'),
-            'clientSecret' => Yii::t('AuthMastodonModule.base', 'Client secret'),
-            'serverUrl' => Yii::t('AuthMastodonModule.base', 'Mastodon Server Url'),
+            'enabled' => Yii::t('AuthORCIDModule.base', 'Enabled'),
+            'clientId' => Yii::t('AuthORCIDModule.base', 'Client ID'),
+            'clientSecret' => Yii::t('AuthORCIDModule.base', 'Client secret'),
+            'serverUrl' => Yii::t('AuthORCIDModule.base', 'ORCID Server Url'),
         ];
     }
 
@@ -77,7 +77,7 @@ class ConfigureForm extends Model
     public function loadSettings()
     {
         /** @var Module $module */
-        $module = Yii::$app->getModule('auth-mastodon');
+        $module = Yii::$app->getModule('auth-orcid');
 
         $settings = $module->settings;
 
@@ -86,7 +86,7 @@ class ConfigureForm extends Model
         $this->clientSecret = $settings->get('clientSecret');
         $this->serverUrl = $settings->get('serverUrl');
 
-        $this->redirectUri = Url::to(['/user/auth/external', 'authclient' => 'mastodon'], true);
+        $this->redirectUri = Url::to(['/user/auth/external', 'authclient' => 'orcid'], true);
     }
 
     /**
@@ -95,7 +95,7 @@ class ConfigureForm extends Model
     public function saveSettings()
     {
         /** @var Module $module */
-        $module = Yii::$app->getModule('auth-mastodon');
+        $module = Yii::$app->getModule('auth-orcid');
 
         $module->settings->set('enabled', (boolean)$this->enabled);
         $module->settings->set('clientId', $this->clientId);
