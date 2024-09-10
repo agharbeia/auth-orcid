@@ -1,8 +1,4 @@
 Changelog
 =========
-### 1.0.0-beta.3 (TBA)
-- Enh: Added $attributeNames
-
-### 1.0.0-beta.2 (3/28/2023)
-- Fix: Mastodon Server URL field
-- Fix: Mastodon URL Paths
+### 1.0.0-beta.1 (10/09/2024)
+- Forked from auth-mastodon
