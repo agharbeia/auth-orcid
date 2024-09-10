@@ -1,6 +1,6 @@
 <?php
 
-namespace gm\humhub\modules\auth\mastodon;
+namespace gm\humhub\modules\auth\orcid;
 
 use yii\helpers\Url;
 
@@ -20,7 +20,7 @@ class Module extends \humhub\components\Module
      */
     public function getConfigUrl()
     {
-        return Url::to(['/auth-mastodon/admin']);
+        return Url::to(['/auth-orcid/admin']);
     }
 
     /**
